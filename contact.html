@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./contact.css">
+</head>
+<body>
+    
+  <!-- Navigation Bar -->
+   
+  <div class="nav-bar">
+
+    <ul class="menu">
+
+        <li><a href="index.html" class="cont">Home</a></li>
+        <li><a href="service.html" class="serve">Our Services</a></li>
+        <li><a href="contact.html" class="home">Contact</a></li>
+        <li><a href="about.html" class="ab">About Us</a></li>
+    </ul>
+
+
+    <img class="hamburger" src="./Image/hamburger.png" alt="">
+    <img src="./Image/Close.png" alt="" class="cancel">
+
+</div>
+
+     <!-- Content -->
+
+     <div class="container">
+
+        <div class="contact-form">
+
+            <h3>Contact Us</h3>
+
+            <form action="">
+                <input type="text" placeholder="Name"><br>
+                <input type="text" placeholder="Email"> <br>
+                <label for="">Message</label><br>
+                <textarea name="" id="" cols="30" rows="10"></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+            
+     </div>
+
+
+     <p class="contact-footer">copyright© Jeeb Plastik Nigeria Ltd.</p>
+
+
+
+     <script>
+        let toggle = document.querySelector('.hamburger');
+             toggle.addEventListener('click',function(){
+                document.querySelector('.menu').style.display='block';
+                document.querySelector('.cancel').style.display='block';
+                this.style.display='none';
+     
+                document.querySelector('.home').style.display='block';
+                document.querySelector('.serve').style.display='block';
+                document.querySelector('.cont').style.display='block';
+                document.querySelector('.ab').style.display='block';
+     
+     
+             })
+             let closebtn = document.querySelector('.cancel');
+                 closebtn.addEventListener('click',function(){
+                document.querySelector('.nav-bar').style.display='block';
+                document.querySelector('.hamburger').style.display='block';
+                document.querySelector('.nav-bar .menu').style.display='none';
+     
+                this.style.display='none';
+             })
+     
+     </script>
+     
+
+</body>
+</html>

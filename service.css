@@ -1,0 +1,424 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'roboto', sans-serif;
+    background-image: url(./Image/22.jpeg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1100px;
+}
+
+
+/* Navigation Bar */
+
+
+
+.nav-bar{
+    height: 65px;
+    margin-top:0.2px;
+    background-color:white;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    width: 1350px;
+   
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    list-style: none;
+    padding-top: 24px;
+    padding-right: 100px;
+}
+
+
+
+.nav-bar a{
+    font-size: 17px;
+    text-decoration: none;
+    padding-right: 20px;
+    margin-top: 30px;
+}
+
+
+.nav-bar a:hover{
+    font-size: 25px;
+    transition: 0.7s;
+}
+
+.hamburger{
+    display: none;
+}
+
+.cancel{
+    display: none;
+}
+
+.home{
+    color:  rgb(26, 188, 26);
+    margin-right: 10px;
+    padding: 22px 15px;
+
+}
+
+
+
+/* Service Page */
+
+.service-content{
+    margin-top: 65px;
+    height: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.service-note h2{
+    padding: 50px 0 0 70px;
+    color: white;
+}
+
+.service-note p{
+    color: white;
+    padding: 50px 0 0 70px;
+    line-height: 27px;
+}
+
+
+.service-image img{
+    width: 320px;
+    padding-left: 150px;
+    padding-top: 30px;
+}
+
+
+.plastic{
+    color: white;
+    padding: 40px 0 0 0px;
+    line-height: 27px;
+
+}
+
+.service-image .plastic{
+    padding: 34px 0 0 0px;
+    line-height: 27px;
+    color: white;
+}
+
+.plastic-note{
+    padding: 10px 0 0 70px;
+    line-height: 27px;
+    color: white;
+}
+
+.information{
+    background-color: white;
+    color: black;
+    height: 30px;
+    position: absolute;
+    bottom: 120px;
+    width: 1160px;
+    left: 30px;
+    padding: 15px;
+}
+
+.information a{
+    color: blue;
+}
+
+.information img{
+    width: 25px;
+    margin-left: 15px;
+}
+
+.service-footer{
+    padding-top: 30px;
+    color:  rgb(118, 131, 118);
+    font-size: 15px;
+    font-weight: normal;
+    padding-left: 1000px;
+}
+
+
+
+
+
+/* Service Responsiveness */
+
+
+@media screen and (max-width:360px){
+
+
+
+    /* Navigation Bar */
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    body{
+        padding: 0;
+        margin: 0;
+        font-family: 'roboto', sans-serif;
+        background-image: url(./Image/22.jpeg);
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 1300px;
+        max-width: 360px;
+    }
+
+    .nav-bar{
+        display: block;
+        height: 35px;
+        margin-top:0.2px;
+        background-color:white;
+        position: fixed;    
+        top: 0px;
+        z-index: 1;
+        width: 360px;
+    }
+    
+    ul{
+        display: block;
+        list-style: none;
+        padding-top: 0px;
+        padding-right: 0px;
+        z-index: 1;
+        margin-top: 0px;    
+    }
+    
+    
+    
+    .nav-bar a{
+        display:block;
+        row-gap: 0px;
+        height: 0px;
+        font-size: 17px;
+        text-decoration: none;
+        padding-right: 0px;
+        padding-left: 0px;
+        color: white;
+        z-index: 1;
+        width:325px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        padding-top: 0;
+    }
+
+    .nav-bar a:hover{
+        font-size: 25px;
+        transition: 0.7s;
+    }
+
+    .home{
+        margin-right: 20px;
+        padding-left: 0;
+        margin-left: 0px; 
+    }
+
+    .serve{
+        display: block;
+        color: white;
+        padding-left: 0px;
+        bottom: 20px;
+        height: 200px; 
+        width: 70px;
+        padding-top: 40px;
+        margin-top: 10px;
+    }
+
+    .ab{
+        display: block;
+        color: red; 
+    }
+
+    .cont{
+        display: block;
+        color:black;
+        padding-left: 0px;
+        padding-top: 0px;
+        background-color: green; 
+        height: 300px; 
+        margin-top: 10px;
+    } 
+
+    
+    .hamburger{
+        display: block;
+        width: 30px;
+        position: absolute;
+        top: 2px;
+        right: 20px;
+        width: 35   px;
+    }
+
+    .menu{
+        display: none;
+        background-color: rgb(14, 14, 27);
+        height: 479px;
+        z-index: 1;
+        width: 340px;
+        padding-top: 0;
+        margin-top: 0px;
+        padding-left: 20px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        position: absolute;
+        margin-bottom: 0px;
+        margin-top: 35px;
+    }
+
+
+    .cancel{
+        display: none;
+        width: 30px;
+        padding-left: 310px;
+        height: 30px;
+        padding-top: 4px;
+    } 
+    
+    
+    
+   
+    
+
+
+
+    /* Service Page */
+
+
+
+
+    .service-content{
+        margin-top: 65px;
+        height: 2200px;
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 800px;
+    }
+
+    .service-note h2{
+        padding: 50px 60px 0 30px;
+        color: white;
+        margin-left: 0px;
+        position: absolute;
+        top: 10px;
+    }
+
+    .service-note p{
+        color: white;
+        padding: 50px 10px 0 30px;
+        line-height: 27px;
+        margin-left: 0px;
+        font-size: 15px;
+        margin-right: 100px;
+        display: none;
+    }
+
+
+    .service-image img{
+        width: 270px;
+        padding-left: 45px;
+        padding-top: 50px;
+    }
+
+
+    .plastic{
+        color: white;
+        padding: 40px 0px 0px 0px;
+        line-height: 27px;
+        font-size: 16px;
+        margin-left: -40px;
+        height: 30px;
+    }
+
+    .service-image .plastic{
+        padding: 34px 0 0 0px;
+        line-height: 27px;
+        color: white;
+    }
+
+    .plastic-note{
+        padding: 10px 0 0 20px;
+        line-height: 23px;
+        color: white;
+        margin-left: 24px;
+        margin-right:50px;
+        padding-left: 6px;
+        font-size: 17px;
+        height: 150px;
+        margin-bottom: 140px;
+    }
+
+    .information{
+        background-color: white;
+        color: black;
+        height: 30px;
+        position: absolute;
+        bottom: 110px;
+        width: 290px;
+        font-size: 10px;
+        left: 20px;
+        padding: 8px;
+        line-height: 14px;
+    }
+
+    .information a{
+        color: blue;
+    }
+
+    .information img{
+        width: 10px;
+        margin-left: 10px;
+    }
+
+    .service-footer{
+        padding-top: 10px;
+        color:  rgb(118, 131, 118);
+        font-size: 10px;
+        font-weight: normal;
+        padding-left: 90px;
+        position: absolute;
+        top: 1200px;
+    }
+
+    .plastic span{
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+ 
+    .service-note{
+        height: 650px;
+    }
+
+    .service-image{
+        height: 200px;
+    }
+
+   
+
+    .metal-note{
+        display: none;
+    }
+
+
+    .metal{
+        display: none;
+    }
+    
+        
+
+    }
+
+
+
+

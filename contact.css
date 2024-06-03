@@ -1,0 +1,376 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'roboto', sans-serif;
+    background-image: url(./Image/22.jpeg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2200px;
+}
+
+
+/* Navigation Bar */
+
+
+
+.nav-bar{
+    height: 65px;
+    margin-top:0.2px;
+    background-color:white;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    width: 1350px;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    list-style: none;
+    padding-top: 24px;
+    padding-right: 100px;
+}
+
+
+
+.nav-bar a{
+    font-size: 17px;
+    text-decoration: none;
+    padding-right: 20px;
+    margin-top: 30px;
+}
+
+
+.nav-bar a:hover{
+    font-size: 25px;
+    transition: 0.7s;
+}
+
+.hamburger{
+    display: none;
+}
+
+.cancel{
+    display: none;
+}
+
+.home{
+    color:  rgb(26, 188, 26);
+    margin-right: 10px;
+    padding: 22px 15px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Contact Page */
+
+.contact-form{
+    background-color: white;
+    padding-top: 10px;
+    position: absolute;
+    right: 450px;
+    top: 100px;
+    height: 400px;
+    width: 350px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 2px rgb(199, 192, 192);
+}
+
+body{
+    height: 100px;
+}
+
+form{
+    margin-left: 35px;
+    padding-top: 10px;
+}
+
+input{
+    margin-bottom: 15px;
+    width: 280px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border: solid 1px grey;
+}
+
+
+textarea{
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 280px;
+}
+
+
+h3{
+    margin-left: 95px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.contact-form button{
+    margin-top: 10px;
+    padding: 10px 5px;
+    width: 282px;
+    border-radius: 5px;
+    background-color:  rgb(30, 157, 30);
+    border: none;
+    cursor: pointer;
+}
+
+::placeholder{
+    padding-left: 10px;
+}
+
+
+.contact-footer{
+    padding-top: 560px;
+    color:  rgb(118, 131, 118);
+    font-size: 15px;
+    font-weight: normal;
+    padding-left: 1000px;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* Contact Responsiveness */
+
+
+@media screen and (max-width:360px){
+
+
+
+    /* Navigation Bar */
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    body{
+        padding: 0;
+        margin: 0;
+        font-family: 'roboto', sans-serif;
+        background-image: url(./Image/22.jpeg);
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 605px;
+        max-width:min-content;
+        scrollbar-width: none;
+    }
+
+    .nav-bar{
+        display: block;
+        height: 35px;
+        margin-top:0.2px;
+        background-color:white;
+        position: fixed;    
+        top: 0px;
+        z-index: 1;
+        width: 360px;
+    }
+    
+    ul{
+        display: block;
+        list-style: none;
+        padding-top: 0px;
+        padding-right: 0px;
+        z-index: 1;
+        margin-top: 0px;
+    }
+    
+    
+    .nav-bar a{
+        display:block;
+        row-gap: 0px;
+        height: 0px;
+        font-size: 17px;
+        text-decoration: none;
+        padding-right: 0px;
+        padding-left: 0px;
+        color: white;
+        z-index: 1;
+        width:325px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        padding-top: 0;
+    }
+    
+    
+    .nav-bar a:hover{
+        font-size: 25px;
+        transition: 0.7s;
+    }
+    
+    .home{
+        margin-right: 20px;
+        padding-left: 0;
+        margin-left: 0px; 
+    }
+
+    .serve{
+        display: block;
+        color: white;
+        padding-left: 0px;
+        bottom: 20px;
+        height: 200px; 
+        width: 70px;
+        padding-top: 40px;
+        margin-top: 10px;
+    }
+
+    .ab{
+        display: block;
+        color: red; 
+    }
+
+    .cont{
+        display: block;
+        color:black;
+        padding-left: 0px;
+        padding-top: 0px;
+        background-color: green; 
+        height: 300px; 
+        margin-top: 10px;
+    } 
+
+
+    .hamburger{
+        display: block;
+        width: 30px;
+        position: absolute;
+        top: 2px;
+        right: 20px;
+        width: 35px;
+    }
+
+    .menu{
+        display: none;
+        background-color: rgb(14, 14, 27);
+        height: 479px;
+        z-index: 1;
+        width: 340px;
+        padding-top: 0;
+        margin-top: 0px;
+        padding-left: 20px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        position: absolute;
+        margin-bottom: 0px;
+        margin-top: 32px;
+    }
+    
+    .cancel{
+        display: none;
+        width: 30px;
+        padding-left: 310px;
+        height: 30px;
+        padding-top: 4px;
+    } 
+
+
+
+
+
+    /* Contact Responsiveness */
+
+
+    .contact-form{
+        background-color: white;
+        padding-top: 10px;
+        position: absolute;
+        left: 50px;
+        top: 80px;
+        height: 370px;
+        width: 260px;
+        border-radius: 30px;
+        box-shadow: 2px 2px 2px rgb(199, 192, 192);
+    }
+    
+    label{
+        margin-left: 10px;
+    }
+   
+    form{
+        margin-left: 0px;
+        padding-top: 10px;
+        margin-right: 900px;
+        padding-right: 400px;
+        width: 10px;
+    }
+    
+    input{
+        margin-bottom: 15px;
+        width: 240px;
+        padding-top: 5px;
+        margin-left: 8px;
+        padding-bottom: 5px;
+        border-radius: 5px;
+        border: solid 1px grey;
+    }
+    
+    
+    textarea{
+        border-radius: 5px;
+        margin-top: 5px;
+        width: 240px;
+        margin-left: 8px;
+    }
+    
+    
+    h3{
+        margin-left: 60px;
+        font-size: 25px;
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+    
+    .contact-form button{
+        margin-top: 10px;
+        margin-left: 8px;
+        width: 240px;
+        border-radius: 5px;
+        background-color:  rgb(30, 157, 30);
+        border: none;
+        cursor: pointer;
+    }
+    
+    ::placeholder{
+        padding-left: 10px;
+    }
+    
+    
+    .contact-footer{
+        padding-top: 480px;
+        color:  rgb(118, 131, 118);
+        font-size: 12px;
+        font-weight: normal;
+        padding-left: 259px;
+    }
+    
+    
+
+}
